@@ -1,0 +1,20 @@
+.logo{
+    height: 70px;;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log-in{
+   background-color: none;
+    border: 2px solid #000;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #000; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
