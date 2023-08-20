@@ -1,0 +1,75 @@
+
+.hero {
+
+  background-image: url(../../img/hero\ \(2\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+ 
+}
+
+
+
+
+
+  .about-title{
+    display: flex;
+    font-size: 25px;
+    color: #FF7048;
+    padding-top: 60px;
+    padding-left:40px;
+    
+  }
+  .about-container{
+    display: flex;
+    flex-direction: row;
+   
+    
+  }
+  .imgabout{
+    
+     height: 60vh;
+     width: 50vw;
+     border-radius: 50px ;
+  }
+  .suptitle-about{
+    font-size: 1.8rem;
+    color: #30394F; padding-bottom: 20px;
+  }
+  .about-para{
+    font-size: 1.5rem;
+    text-align: justify;
+   
+  }
+  .para-container{
+    margin-right: 80px;
+    margin-left: 20px;
+   
+  }
+  .container-img-about{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   margin-top: 30px;
+  
+  }
+  .img{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+
+  .contaier-card{
+    margin-top: 80px;
+  }
+  .title-new-home{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #FF7048;
+    margin-top: 50px;
+    padding-left:40px;
+  }
+
+  
