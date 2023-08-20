@@ -1,5 +1,5 @@
 import  React from 'react';
-import {AppBar ,Box,Toolbar } from '@mui/material';
+import {AppBar ,Box,Toolbar} from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
@@ -10,10 +10,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import "./style.css"
-import logo from '../../img/logo.png.png'
+import logo from '../../img/logo.png'
 
-const pages = [ 'Houses', 'AboutUs'];
-const settings = ['Profile', 'Favorite', 'Logout'];
+const pages = [ 'Houses', 'About us'];
+
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -35,7 +35,8 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
+    <div className='contaiter'>
+    <AppBar position="static" class="AppBar">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -55,6 +56,7 @@ function NavBar() {
           >
             
           </Typography>
+
           <img src={logo} alt="Logo" className='logo' />
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -64,7 +66,7 @@ function NavBar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="white"
             >
               <MenuIcon />
             </IconButton>
@@ -87,7 +89,7 @@ function NavBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} className="nav">
+                <MenuItem key={page} onClick={handleCloseNavMenu} >
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -105,57 +107,33 @@ function NavBar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'white',
               textDecoration: 'none',
             }}
           >
-            Hunting
+            
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} className="nav-container">
             {pages.map((page) => (
               <Button 
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                class="nav"
               >
                 {page}
               </Button>
             ))}
           </Box>
-          <button className='log-in'> Log in </button>
-          <button className='Register'> Register </button>
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+        
+          <Button   id='Login'>Log in </Button>
+          <Button  id='Register'> Register </Button>
+          
+     
         </Toolbar>
       </Container>
-    </AppBar>
-  );
+    </AppBar>   
+  </div>)
 }
 export default NavBar;

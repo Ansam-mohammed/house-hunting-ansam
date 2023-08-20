@@ -5,4 +5,4 @@ import NavBar from "./NavBar";
 
 
 
-export {CardContainer, Cards, Footer,NavBar }
+export {CardContainer, Cards, Footer,NavBar, }

@@ -1,20 +1,59 @@
-.logo{
-    height: 70px;;
+.AppBar{
+    background-color: #30394F;
+    box-shadow: 10px 10px 10px rgba(206, 205, 205, 0.582);
+   
 }
 
-.nav{
+.logo{
+    height: 70px;    
+}
+
+.nav-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+    }
+
+.nav{
+    background-color: #30394F;
+    height: 50%;
+    border: none;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
 }
-.log-in{
-   background-color: none;
-    border: 2px solid #000;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    color: #000; 
-    font-size: 16px;
-    cursor: pointer;
-    transition: border-color 0.3s ease-in-out;
+ 
+.nav:hover{
+border-bottom: 2px solid #FF7048;
 }
+
+
+#Login{
+  
+    margin-right: 15px ;
+    border-radius: 25px;
+    color: #FF7048;   
+    height: 30%;
+    border: 2px solid #FF7048;
+    width: 100px;
+}
+
+#Login:hover{
+    color: #ffffff; 
+    background-color: #FF7048;   
+}
+
+#Register{
+    background-color: #FF7048;
+    height: 30%;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    border: #FF7048;
+    width: 100px;
+}
+#Register:hover{
+ opacity: 80%;
+}
+
