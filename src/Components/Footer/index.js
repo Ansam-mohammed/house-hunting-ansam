@@ -9,6 +9,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import logo from '../../img/logo.png'
 
 const pages = ['Houses', 'AboutUs'];
 const settings = ['Profile', 'Favorite', 'Logout'];
@@ -33,8 +34,8 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar position="static" >
+      <Container maxWidth="xl" className='AppBar'>
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -51,7 +52,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            Footer
+            <img src={logo} alt="Logo" className='logo' />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -84,7 +85,7 @@ function NavBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleCloseNavMenu} >
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
