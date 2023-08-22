@@ -8,7 +8,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
   },
   media: {
-    width: 150, // تعديل حسب الحجم المطلوب للصورة
+    width: 150, 
   },
   content: {
     flex: 1,
@@ -40,4 +40,3 @@ function ImageWithText(props) {
 }
 
 export default ImageWithText;
-
