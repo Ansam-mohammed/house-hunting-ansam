@@ -1,3 +1,20 @@
-.icon{
-    background-color: aquamarine;
+.search-input-herooo{
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color:#ff7048;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+#search-heeroo{
+    color: #ffff;
+}
+.search-input-herooo:hover{
+    opacity: 80%;
+    transform: scale(1.1);
 }

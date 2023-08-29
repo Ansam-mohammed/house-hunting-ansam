@@ -1,27 +1,17 @@
 import * as React from 'react';
-import Paper from '@mui/material/Paper';
-import InputBase from '@mui/material/InputBase';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
+import Button from '@mui/material/Button';
+import Filter from '../../Pages/filtter'
+import { Link } from 'react-router-dom';
 import './style.css'
 
-export default function CustomizedInputBase() {
+
+export default function DisableElevation() {
   return (
-    <Paper
-      component="form"
-      sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 400 }}
-    >
-       <InputBase
-        sx={{ ml: 1, flex: 1 }}
-        placeholder="Search "
-        inputProps={{ 'aria-label': 'search google maps' }}
-        
-      />
-      <IconButton type="button" sx={{ p: '10px' }} aria-label="search" className='input'>
-        <SearchIcon />
-      </IconButton>
-     
-   
-    </Paper>
+    <Link to="/Filter" className='search-input-herooo'>
+        <Button id='search-heeroo'>
+          Search
+        </Button>
+      </Link>
+    
   );
 }

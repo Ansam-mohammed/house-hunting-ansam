@@ -5,19 +5,19 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import "./style.css"
+import { Link } from 'react-router-dom';
 import logo from '../../img/logo.png'
+import "./style.css"
 
-const pages = [ 'Houses', 'About us'];
 
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+ 
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -33,6 +33,7 @@ function NavBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+ 
 
   return (
     <div className='contaiter'>
@@ -88,11 +89,16 @@ function NavBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} >
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+           {/* <MenuItem style={{textTransform:'capitalize' }}>
+           <Typography textAlign="center">About us</Typography>
+            </MenuItem> */}
+           
+            <Button sx={{ my: 2, color: "white", display: "block" }}></Button>
+            {/* <MenuItem style={{textTransform:'capitalize' }}>
+                  <Link to='/About' className='btn-link'  style={{color:'#0B885B' ,fontSize:' large' }}>
+                  AboutUs</Link>
+            </MenuItem> */}
+          
             </Menu>
           </Box>
           <Typography
@@ -115,16 +121,16 @@ function NavBar() {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} className="nav-container">
-            {pages.map((page) => (
-              <Button 
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-                class="nav"
-              >
-                {page}
-              </Button>
-            ))}
+          
+
+
+                 <Link to='/'> <Button>House</Button></Link>
+                  
+                  <Link to='/About'><Button>About</Button></Link> 
+
+
+
+
           </Box>
         
           <Button   id='Login'>Log in </Button>

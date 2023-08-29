@@ -1,0 +1,149 @@
+/* .details-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.img-container{
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.img-left-container{
+  width: 100%;
+  height: 80vh;
+  
+}
+.img-right{
+ width: 100%;
+
+}
+.img{
+   height: 40vh;
+   width: 30vw;
+   
+}
+.img-left
+{ 
+  width: 40vw;
+  height: 80vh;
+} */
+
+
+
+  .details-container {
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .img-left-container {
+    margin-right: 20px;
+  }
+
+  .img-left {
+
+    width: 30vw;
+  height: 80vh;
+  }
+
+ 
+  .img {
+   
+    margin-bottom: 10px;
+    height: 40vh;
+    width: 30vw;
+  }
+  .title-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #title,
+  #price
+  {
+font-size: 2rem;
+color: #ff7048;
+  }
+  #description{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+  }
+.infomation-container{
+  border: 2px solid #ff7048;
+  color: #30394F;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  height: 40px;
+  align-items: center;
+  font-weight: bold;
+}
+.infomation-user{
+  background-color: #cccccc3d;
+  width: 60%;
+  margin-top: 20px;
+  padding: 15px;
+}
+.icon-infomation{
+  color:#30394F;
+  display: flex;
+  flex-direction: column;
+}
+.informatiom{
+  color:#30394F;
+}
+
+.btn-container{
+  margin: 4em auto;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  gap: 20px;
+}
+.backLink{
+  background-color: #F5F5F5;
+  border: 1px solid #ff7048;
+  color:#ff7048;
+  text-decoration:none;
+  text-align: center;
+  width: 120px;
+  line-height: 27px;
+  padding: 0.5em;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.25s;
+}
+.backLink:hover{
+  background-color: #ff7048;
+  color: #ffff;
+}
+#favriteBtn{
+  border-radius: 25px;
+  background-color: #ff7048;
+  color: #ffff;
+  line-height: 27px;
+  transition: all 0.25s;
+  width: 140px;
+}
+#favriteBtn:hover{
+  opacity: 80%;
+}

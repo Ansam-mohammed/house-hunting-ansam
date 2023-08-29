@@ -1,3 +1,30 @@
-.AppBar{
-    background-color:#30394F ;
+.AppBar-footer{
+    background-color: #30394F;
+    height: 120px;
+    width: 100%;
+}
+.logo-footer{
+    height: 70px;  
+}
+.logo-footer-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.privicy{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+
+}
+.copy-container{
+    display: flex;
+    justify-content: space-between;
 }
