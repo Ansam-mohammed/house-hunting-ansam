@@ -1,18 +1,26 @@
-import React  from 'react';
-import {Layout, Landing,} from '../Pages';
-
-
-
-
-
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+// import Landing from '../Pages/Landing';
+import Details from '../Pages/DetailsHouse';
+import {Layout, Landing, NotFound} from '../Pages';
+import About from '../Pages/About'
+import Detail from '../Pages/DetailsHouse';
+import Filter from '../Pages/filtter'
 function App() {
   return (
-    <Layout className="App">
-    <Landing/>
+
+    <Layout>
+ <Router>
+      <Routes>
+      <Route path='/' element={<Landing/>}/>
+      <Route path='/About' element={<About/>}/>
+      <Route path='/details/:id' element={<Detail/>}/>
+      <Route path='*' element={<NotFound/>}/>
+      <Route path='/Filter' element={<Filter/>}/>
+      </Routes>
+    </Router>
     </Layout>
-
-
+   
   );
 }
-
 export default App;

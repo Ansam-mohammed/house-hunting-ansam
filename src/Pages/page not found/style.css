@@ -1,0 +1,89 @@
+/* #not-found-container{
+    background-image: url(../../img/not-found.jpg) ;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150vh;
+}
+#text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn-back{
+   
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #c13131;
+  margin-top: 50px;
+}
+#aa{
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+} */
+
+/* style.css */
+
+/* style.css */
+
+#not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 150vh;
+    background-image: url('../../img/not-found.jpg');
+    background-size: cover;
+    padding-top: 20vh; /* تعيين الهامش العلوي للعنصر */
+  }
+  
+  #text {
+    font-size: 24px;
+    font-weight: bold;
+    color :#ff7048;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 12vw;
+  }
+  
+  .button {
+ 
+
+  }
+  
+  #btn-back {
+    text-decoration: none;
+    color: #ff7048;
+  }
+  #btn-back:hover{
+color: #ffff;
+  }
+  #aa:hover {
+    background-color: #ff7048;
+    opacity: 80%;
+    transform: scale(1.2);
+  }
+
+  #aa {
+    margin-top: 20px;
+    border-radius: 25px;
+    border: 2px solid #ff7048;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12vw;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  
+  
+ 
+  
