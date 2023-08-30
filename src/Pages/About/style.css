@@ -1,20 +1,21 @@
-.about-title{
+#about-title{
     display: flex;
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #FF7048;
     padding-top: 60px;
     padding-left:40px;
+    margin: 50px;
+
     
   }
   .about-container{
     display: flex;
     flex-direction: row;
-   
+     margin: 50px;
     
   }
-  .imgabout{
-    
-     height: 60vh;
+  .imgabout{ 
+     height: 50vh;
      width: 50vw;
      border-radius: 50px ;
   }
@@ -24,17 +25,22 @@
     padding-bottom: 20px;
   }
   .about-para{
-    font-size: 1.5rem;
+    width: 80%;
+    margin-top: 50px;
+    font-size: 1.6rem;
     text-align: justify;
-   
+ 
   }
+
+
+
   .para-container{
     margin-right: 80px;
     margin-left: 20px;
    
   }
   .container-img-about{
-    display: flex;
+   display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: space-around;

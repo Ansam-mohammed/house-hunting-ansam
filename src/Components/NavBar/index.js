@@ -121,20 +121,17 @@ function NavBar() {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} className="nav-container">
-          
-
-
-                 <Link to='/'> <Button>House</Button></Link>
-                  
-                  <Link to='/About'><Button>About</Button></Link> 
+ 
+          <Link to='/' className='link-btn'> <Button id='home-btn'>Home</Button></Link>
+          <Link to='/About' className='link-btn'><Button id='home-btn'>About</Button></Link> 
 
 
 
 
           </Box>
         
-          <Button   id='Login'>Log in </Button>
-          <Button  id='Register'> Register </Button>
+      <Link to='Login'> <Button  id='Login'>Log in </Button></Link>    
+          <Link to ='Register'> <Button  id='Register'> Register </Button></Link> 
           
      
         </Toolbar>

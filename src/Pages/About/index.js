@@ -13,7 +13,7 @@ function About() {
     return (
     <>
 
-      <Typography variant="h3" gutterBottom className='about-title'>
+      <Typography variant="h3" gutterBottom id='about-title'>
        About us
       </Typography>
        <div className='about-container'>
@@ -37,7 +37,7 @@ function About() {
 
         <div className='container-img-about'>
             <div className='imgabout1' >
-            <img src={imgabout1} className='img' />
+            <img src={imgabout1}  />
             <h4>Exceptional lifestyle</h4> 
             </div>
             <div className='imgabout2'>
