@@ -1,0 +1,15 @@
+.root-Register{
+ width: 100%; 
+ height: 100vh;
+ background: linear-gradient(to bottom, #30394F, #ff70485b,#ffff, #30394F ); 
+display: flex;
+justify-content: center;
+align-items: center;
+color: #30394F;
+font-size: 3rem;
+transition: font-size 0.3s ease-in-out;
+}
+
+.root-Register:hover{
+    font-size: 5rem;
+}

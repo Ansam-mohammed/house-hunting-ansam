@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 
 
 const Landing = ()=> {
+  
   const[house , setHouse] = useState([])
   const getHouse =  async ()=>{
       try{
