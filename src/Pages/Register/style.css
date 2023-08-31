@@ -1,6 +1,6 @@
 .root-Register{
  width: 100%; 
- height: 100vh;
+ height: 120vh;
  background: linear-gradient(to bottom, #30394F, #ff70485b,#ffff, #30394F ); 
 display: flex;
 justify-content: center;

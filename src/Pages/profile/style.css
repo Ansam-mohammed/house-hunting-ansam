@@ -1,5 +1,174 @@
 .root-Profile{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: linear-gradient(to bottom, #30394F, #ff70485b,#ffff, #30394F ); 
 }
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+
+}
+#avatar-prfile{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #30394F, #ff70485b,#ffff ); 
+    border-radius: 50%;
+}
+#btn-groub{
+    gap: 10px;
+
+  
+}
+.btn-pro{
+    width: 300px;
+    background-color: #30394F;
+}
+#ptn1{
+    background-color: #30394F;
+}
+#ptn2{
+    background-color: transparent;
+    border: 2px solid #30394F;
+    color: #30394F;
+
+}
+
+#ptn1:hover,
+#ptn2:hover
+{
+   opacity: 80%;
+}
+.name-pro{ 
+    font-size: 2rem;
+    padding: 20px;   
+    font-weight: bold;
+    color: #30394F;
+}
+.User{
+    font-size: 1.3rem;
+    padding: 20px;   
+    font-weight: bold;
+    color: #30394F;
+}
+#conatiner-profile-user{
+  width: 100%;
+ height: 50vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+ margin-bottom: 40px;
+}
+#profile-user{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    background-color:transparent;
+    border: 2px solid #30394F;
+    border-radius: 10px;
+    font-size: 1.5rem;
+
+}
+.usre-left{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.use{
+    margin: 50px;
+   color: #30394F;
+}
+.info{
+    margin: 50px;
+    color: #30394F;
+
+}
+.usree
+{   
+    width: 80%;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 50px;
+}
+.usree1
+{
+    width: 80%;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 50px;
+}
+.usree2
+{
+    width: 80%;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 50px;
+}
+.usre-left-add{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 50px;
+ 
+}
+#profile-user-add{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    background-color:transparent;
+    border: 2px solid #30394F;
+    border-radius: 10px;
+    font-size: 1.5rem;
+ 
+}
+#add-house{
+    background-color: #FF7048;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    border: #FF7048;
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+}
+#add-houser:hover{
+ opacity: 80%;
+}
+#btonn-container{
+    margin-top: 20px;
+    border-radius: 25px;
+    border: 1px solid #ff7048;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+#btn-back-profile{
+    text-decoration: none;
+    color: #ff7048;
+}
+#btn-back-profile:hover{
+    color: #ffff;
+      }
+
+ #btonn-container:hover {
+    background-color: #ff7048;
+    opacity: 80%;
+ transform: scale(1.1);
+      }
+.mmm{
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 30px;
+      }

@@ -35,7 +35,6 @@ const Landing = ()=> {
 {console.log(house, "gg")}
   <h1 className='title-home'>New homes collection</h1>
   <CardContainer  houses={house}/>
-  {/* <Layout/> */}
 
 
   </>

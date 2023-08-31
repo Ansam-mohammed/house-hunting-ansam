@@ -8,7 +8,9 @@ import Detail from '../Pages/DetailsHouse';
 import Filter from '../Pages/filtter';
 import Login from '../Pages/Login';
 import Register from '../Pages/Register'
-import Profile from '../Pages/profile'
+import AddHouse from '../Pages/profile/AddHouse'
+import Profile from '../Pages/profile/myProfile'
+
 function App() {
   return (
 
@@ -23,6 +25,7 @@ function App() {
       <Route path='/Filter' element={<Filter/>}/>
       <Route path='/Login' element={<Login/>}/>
       <Route path='/Register' element={<Register/>}/>
+      <Route path='/AddHouse' element={<AddHouse/>}/>
       <Route path='/Profile' element={<Profile/>}/>
       </Routes>
       </Layout>

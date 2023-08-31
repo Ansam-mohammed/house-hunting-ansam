@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import Avatar from '@mui/material/Avatar';
+import {Link} from 'react-router-dom'
+
 import './style.css';
 
 
@@ -53,7 +55,6 @@ function Login() {
         <Avatar src="/broken-image.jpg" id="avatar" />
           <h1 >Log in</h1>
           <div className="field">
-            {/* <label>Email</label> */}
             <input
               type="text"
               name="email"
@@ -65,7 +66,6 @@ function Login() {
           </div>
           <p>{formErrors.email}</p>
           <div className="field">
-            {/* <label>Password</label> */}
             <input
               type="password"
               name="password"
@@ -76,9 +76,9 @@ function Login() {
             />
           </div>
           <p>{formErrors.password}</p>
-          <button className="buttonsubmit" >Sign in</button>
+        <Link to="/Profile"> <button className="buttonsubmit" >Sign in</button></Link> 
           <div className="signup-text">
-              Don't have an account? <a href="#" className="buttontext">Sign Up</a>
+              Don't have an account? <Link to="/Register"> <a href="#" className="buttontext">Sign Up</a></Link>
             </div>
         </div>
         </div>
