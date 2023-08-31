@@ -6,6 +6,8 @@ import imgabout2 from '../../img/about2.png'
 import imgabout3 from '../../img/about3.png'
 import imgabout4 from '../../img/about4.png'
 import NavBar from '../../Components/NavBar';
+import Button from '@mui/material/Button';
+import {Link} from 'react-router-dom'
 import './style.css'
 
 function About() {
@@ -54,7 +56,13 @@ function About() {
             </div>
           </div>
     
-
+          <div className="mmm">
+         <div id='btonn-container'>
+                 <Button className='button-profile'>
+                 <Link to='/' id='btn-back-profile'> Back To Home</Link>
+                 </Button>
+             </div> 
+             </div>
 
   
       

@@ -12,7 +12,6 @@ import BedIcon from '@mui/icons-material/Bed';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ActionAlerts from '../alert'
 import IconCheckboxes from '../fav'
-// import Alert from '@mui/material/Alert';
 import './style.css'
 
 

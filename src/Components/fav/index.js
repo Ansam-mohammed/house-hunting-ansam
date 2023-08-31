@@ -57,7 +57,7 @@ export default function IconCheckboxes() {
             open={open}
             autoHideDuration={6000}
             onClose={handleClose}
-            message="Note archived"
+            message="Add to favorite"
             action={action}
         />
     </div>

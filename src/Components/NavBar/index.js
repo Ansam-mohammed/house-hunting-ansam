@@ -89,17 +89,9 @@ function NavBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-           {/* <MenuItem style={{textTransform:'capitalize' }}>
-           <Typography textAlign="center">About us</Typography>
-            </MenuItem> */}
-           
+                   
             <Button sx={{ my: 2, color: "white", display: "block" }}></Button>
-            {/* <MenuItem style={{textTransform:'capitalize' }}>
-                  <Link to='/About' className='btn-link'  style={{color:'#0B885B' ,fontSize:' large' }}>
-                  AboutUs</Link>
-            </MenuItem> */}
-          
-            </Menu>
+             </Menu>
           </Box>
           <Typography
             variant="h5"
